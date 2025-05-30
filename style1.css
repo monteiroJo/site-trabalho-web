@@ -1,0 +1,12 @@
+:root {
+    --palette-red  : #F22248;
+    --palette-black: #303740;
+    --palette-blue : #2F94D3;
+    --palete-grey  : #AEB5BF;
+    --palette-white: #F4F4F4;
+    --Azul-eletrico:#007BFF;
+    --Verde:#32CD32;
+}
+html {
+    font-size: x-large;
+}
