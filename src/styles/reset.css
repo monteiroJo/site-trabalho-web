@@ -1,0 +1,6 @@
+body, ul, li, figure {
+    padding: 0px; margin: 0px;
+}
+ul, ol, dl {
+    list-style: none;
+}
