@@ -1,0 +1,68 @@
+/*
+HEADER AND NAVBAR
+*/
+:root {
+    --nav-bar-min-height: 3.2em;
+}
+
+/* 
+
+
+.header__container {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+.header__container-hax {
+    background-color:#1f1e22;
+}
+.header__navigation, .header__left, .header__right, .header__, #header__side-menu {
+    box-sizing: border-box;
+}
+.header__ {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8em;
+
+    min-height: var(--nav-bar-min-height);
+
+    font-size: larger;
+    font-family: 'Ubuntu', 'Helvetica', 'Bahnschrift', sans-serif;
+}
+.header__navigation, .header__left, .header__right {
+    height: fit-content;
+    border-radius: 0.6em;
+
+    background-color: var(--palette-uhh-grey);
+    color: inherit;
+}
+.header__navigation {
+    flex-grow: 1;
+}
+.header__ button, .header__ a, .header__ i {
+    cursor: pointer;
+}
+.header__burger {
+    display: none;
+    justify-self: flex-end;
+}
+@media only screen and (width <= 600px) {
+    .header__burger {
+        display: flex;
+        margin-left: auto;
+    }
+    .header__navigation, .header__right {
+        display: none;
+    }
+}
+#header__side-menu {
+    position: sticky;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header__navigation-list--vertical {
+    z-index: 2;
+    font-size: large;
+} */

@@ -1,6 +1,50 @@
-body, ul, li, figure {
-    padding: 0px; margin: 0px;
+html, body {
+    width: 100%; height: 100%;
+}
+body, ul, li, figure, p, h1, h2, h3, h4, h5, dt, button, menu {
+    padding: 0px; margin: 0px; vertical-align: baseline;
+}
+a {    
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+* {
+    font-family: 'Just-Sans';
 }
 ul, ol, dl {
     list-style: none;
 }
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: transparent;
+}
+* {
+    box-sizing: border-box;
+}
+/* * {
+    border: none;
+} */
+ /*
+    filter: blur(1px);
+    pointer-events: none;
+    user-events: none;
+    aria-hidden
+
+
+    media queries 
+    only screen and 
+    (orientation: landscape|portrait
+
+
+    grid-area
+    grid-template-areas
+    grid-template-columns
+    grid-template-rows
+
+    transition-property
+    transition-duration
+*/
