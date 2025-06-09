@@ -9,9 +9,6 @@ a {
     color: inherit;
     cursor: pointer;
 }
-* {
-    font-family: 'Just-Sans';
-}
 ul, ol, dl {
     list-style: none;
 }

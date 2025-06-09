@@ -10,12 +10,10 @@
 }
 @font-face {
   font-family: 'mittelss';
-  font-weight: normal;
   src: url(../assets/fonts/alte-din-1451-mittelschrift/din1451alt.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'mittelss';
-  font-weight: bold;
+  font-family: 'mittelssg';
   src: url(../assets/fonts/alte-din-1451-mittelschrift/din1451alt\ G.ttf) format('truetype');
 }
 @font-face {
@@ -27,4 +25,18 @@
   font-family: 'Uni Sans';
   font-weight: bold;
   src: url(../assets/fonts/uni-sans/Uni\ Sans\ Heavy.otf) format('opentype');
+}
+.f1 {
+  font-family: 'mittelssg';
+}
+.f2 {
+  font-family: 'mittelss';
+}
+.f3 {
+  font-family: 'Just Sans';
+  font-weight: bold;
+}
+.f4 {
+  font-family: 'Just Sans';
+  font-weight: normal;
 }
