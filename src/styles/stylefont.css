@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Just Sans';
+  font-weight: normal;
+  src: url(../assets/fonts/just-sans/JUST\ Sans\ Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Just Sans';
+    font-weight: bold;
+    src: url(../assets/fonts/just-sans/JUST\ Sans\ ExBold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'mittelss';
+  font-weight: normal;
+  src: url(../assets/fonts/alte-din-1451-mittelschrift/din1451alt.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'mittelss';
+  font-weight: bold;
+  src: url(../assets/fonts/alte-din-1451-mittelschrift/din1451alt\ G.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Uni Sans';
+  font-weight: light;
+  src: url(../assets/fonts/uni-sans/Uni\ Sans\ Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Uni Sans';
+  font-weight: bold;
+  src: url(../assets/fonts/uni-sans/Uni\ Sans\ Heavy.otf) format('opentype');
+}
