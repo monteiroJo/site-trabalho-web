@@ -1,7 +1,6 @@
-document.getElementById("mainn").style.marginTop = "50px";
 const kmnawe = ["none", "block"];
 function d() {
-    let z = document.getElementById("main-page-log-in-frame");
+    let z = document.getElementById("login-block__");
     z.style.display="none";
     memo = !memo;
     if (memo) z.style.display = "block";
@@ -10,7 +9,6 @@ function d() {
     "block" : "none";*/
 }
 let memo = false;
-
 
 function hideUnhide(c) {
     k = document
@@ -24,11 +22,12 @@ function hideUnhide(c) {
     .display = k;
 }
 function hideUnhideLogin() {
-    let k = document.getElementById("header-section").style.filter;
+    let k = document.getElementById("header-section__").style.filter;
     k = k === "blur(5px)" ? "none" : "blur(5px)";
     
-    hideUnhide("ado");
-    document.getElementById("header-section").style.filter = k;
-    document.getElementById("mainn").style.filter = k;
-    document.getElementById("ter").style.filter = k;
+    hideUnhide("login-block__");
+    document.getElementById("header-section__").style.filter = k;
+    document.getElementById( "main-section__" ).style.filter = k;
+    document.getElementById("footer-section__").style.filter = k;
 }
+document.getElementById("main-section__").style.marginTop='50px';
