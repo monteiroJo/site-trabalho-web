@@ -24,10 +24,11 @@ function hideUnhide(c) {
     .display = k;
 }
 function hideUnhideLogin() {
-    let k = document.getElementById("qup").style.filter;
+    let k = document.getElementById("header-section").style.filter;
     k = k === "blur(5px)" ? "none" : "blur(5px)";
     
     hideUnhide("ado");
-    document.getElementById("qup").style.filter = k;
+    document.getElementById("header-section").style.filter = k;
+    document.getElementById("mainn").style.filter = k;
     document.getElementById("ter").style.filter = k;
 }

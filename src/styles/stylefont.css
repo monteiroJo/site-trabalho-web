@@ -9,11 +9,11 @@
     src: url(../assets/fonts/just-sans/JUST\ Sans\ ExBold.otf) format('opentype');
 }
 @font-face {
-  font-family: 'mittelss';
+  font-family: 'Mittelss';
   src: url(../assets/fonts/alte-din-1451-mittelschrift/din1451alt.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'mittelssg';
+  font-family: 'Mittelssg';
   src: url(../assets/fonts/alte-din-1451-mittelschrift/din1451alt\ G.ttf) format('truetype');
 }
 @font-face {

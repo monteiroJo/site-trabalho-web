@@ -1,3 +1,6 @@
+html {
+    background-color: var(--palette-4);
+}
 :root {
     --nav-bar-height: 4rem;
 }
@@ -63,7 +66,7 @@
     white-space: nowrap;
 }
 .marginx-center85 {
-    max-width: 85vw;
+    max-width: 85rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -77,6 +80,21 @@
 }
 .no-placeholder::placeholder {
     visibility: hidden;
+}
+.inside {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.grid-area-a {
+    grid-area: a;
+}
+.grid-area-b {
+    grid-area: b;
+}
+.grid-area-c {
+    grid-area: c;
 }
 /* .caca
 {
@@ -99,7 +117,7 @@
                          "b c";
 } */
 
-/* ############################################################### */
+/* ############################################################### login */
 /*
 
 */
@@ -160,7 +178,7 @@ div#ado > div#dao > form.form1 > fieldset.field-holder button {
 div#ado > div#dao > form.form1 a {
     text-decoration: underline;
 }
-/* ############################################################### */
+/* ############################################################### header*/
 
 #header-section {
     position: sticky;
@@ -177,15 +195,18 @@ div#header-section > div#pqu > header#upq {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 1em;
     margin-top: auto;
+    gap: 2em;
     margin-bottom: auto;
 }
 div#header-section > div#pqu > header#upq > div.mid {
-    flex: 1
+    flex: 1;
 }
 div#header-section > div#pqu > header#upq > div.right > i {
     display: none;
+}
+div#header-section > div#pqu > header#upq > div.right {
+    justify-self: flex-end;
 }
 div#header-section > nav > ul li {
     padding-bottom: 0.3rem;
@@ -203,15 +224,71 @@ div#header-section > nav > ul li {
 #vertical-navbar {
     transition: all 1s;
 }
-/*########################################################*/
+/*######################################################## main*/
 #mainn {
     position: relative;
+    background-color: var(--palette-8);
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
-/*########################################################*/
-div#ter {
+.group-grid-three {
+    /* max-width: 60vw; */
+    width: clamp(10em, 60vw, 70em);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "c b"
+                         "a b";
+    position: relative;
+    gap: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+@media only screen and (width < 800px) {
+    .group-grid-three {
+        display: block;
+    }
+}
+.group-grid-three h2 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.group-grid-three > div {
+    position: relative;
+}
+.group-grid-three > div > div {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.group-grid-three img {
+    aspect-ratio: 5 / 3;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.agora-outra {
+    max-width: 100em;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*######################################################## footer*/
+footer#ter {
     position: sticky;
     top: 100vh;
 
+    font-family: 'Just Sans';
+
     text-align: center;
-    padding: 1em 0em;
+    z-index: 100;
+    max-height: fit-content;
+    margin-top: auto;
+    padding: 1em;
 }
