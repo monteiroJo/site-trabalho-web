@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+    vertical-align: baseline;
+}
 body, html {
     height: 100%;
 }
@@ -18,9 +23,6 @@ button {
     color: inherit;
     background-color: inherit;
     border: transparent;
-}
-* {
-    box-sizing: border-box;
 }
 /* * {
     border: none;

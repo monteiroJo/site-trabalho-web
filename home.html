@@ -5,72 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/fontmaterialdesign.css">
-    <link rel="stylesheet" href="./src/styles/stylefont.css">
-    <link rel="stylesheet" href="./src/styles/stylecolor.css">
-    <link rel="stylesheet" href="./src/styles/tstyle.css">
-    <link rel="stylesheet" href="./src/styles/rstyle.css">
-    <link rel="stylesheet" href="./src/styles/tstyle2.css">
-    <link rel="stylesheet" href="./src/styles/rstyle2.css">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/stylefont.css">
+    <link rel="stylesheet" href="/src/styles/stylecolor.css">
+    <link rel="stylesheet" href="/src/styles/tstyle.css">
+    <link rel="stylesheet" href="/src/styles/tstyle2.css">
+    <link rel="stylesheet" href="/src/styles/rstyle.css">
+    <link rel="stylesheet" href="/src/styles/rstyle2.css">
 
     <script src="./src/scripts/script1.js"></script>
 </head>
 <body>
     <!--HEADER-->
-    <!-- <header id="header-section" class="full-row bgc4">
-        <div class="marginx-center">
-            
-        </div>
-    </header> -->
-    <header id="header-section__" class="full-row bgc4">
-        <div class="marginx-center c10 f1">
+    <header id="header-section__">
+        <div id="header-section__content" class="marginx-center">
+            <div id="grid-header">
+                <div class="gridone">
+                    <h4>peteca <br> CHAMPIONS</h4>
+                </div>
+                <div class="gridtwo">
+                    <a href="/signup.html">cadastre-se</a>
+                    <a href="/usuario.html" class="user-link">eu</a>
+                    <a href="/sobre.html">sobre</a>
+                </div>
+                <div class="gridthree">
+                    <button type="submit" class="pointer-cursor" onclick="hideUnhideLogin()" id="header-log-in">log in</button>
+                    <i class="material-icons pointer-cursor" onclick="hhh()">menu</i>
+                </div>
+                <div class="gridfour">
+                    <ul>
+                        <li>
+                            <a href="/signup.html">cadastre-se</a>
+                        </li>
+                        <li>
+                            <a href="/usuario.html" class="user-link">eu</a>
+                        </li>
+                        <li>
+                            <a href="/sobre.html">sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-    <div id="header-section__" class="full-row bgc4">
-        <div id="pqu" class="marginx-center c10 f1">
-            <header class="" id="upq">
-                <div class="pre">
-                    <h4 class="f1">man</h2>
-                </div>
-                <div class="mid">
-                    <nav>
-                        <ul>
-                            <li class="inline">
-                                <a href="./signup.html">
-                                    <p class="f1">cadastre-se</p>
-                                </a>
-                            </li>
-                            <li class="inline">sa</li>
-                            <li class="inline">sa</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="right">
-                    <button type="submit" class="pointer-cursor bgc2" onclick="hideUnhideLogin()">log in</button>
-                    <i class="material-icons pointer-cursor" onclick="hideUnhide('vertical-navbar')">menu</i>
-                </div>
-            </header>
-        </div>
-        <nav class="hidden sticky bgc4 full-row" id="vertical-navbar">
-            <ul class="marginx-center c10">
-                <li>
-                    <a href="./signup.html">
-                        <p>
-                            cadastre-se
-                        </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./sobre.html">
-                        <p>
-                            sobre
-                        </p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
     <!--END-->
 
     <!--MAIN-->
@@ -78,15 +55,17 @@
         <div class="marginx-center">
             <div class="group-grid-three">
                 <div class="grid-area-a">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Imagem 1" width="100%"/>
+                    <img src="/src/assets/images/51GVsUWZa8L.jpg" alt="Imagem 1" width="100%"/>
                 </div>
                 <div class="grid-area-c">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Imagem 1" width="100%"/>
+                    <img src="/src/assets/images/peteca-mas-eu-nao-sei-o-que-diz-a-legenda.jpg" alt="Imagem 1" width="100%"/>
                 </div>
                 <div class="grid-area-b">
-                    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Imagem 1" width="100%"/>
+                    <a href="./noticias/historia-da-peteca.html">aa</a>
+                    <img src="./src/assets/images/badminton-badminton.webp" alt="Imagem 1" width="100%"/>
                     <div>
-                        <h2 style="font-family: Uni Sans;">amigo </h2>
+                        <h2>conheça a história por trás da peteca</h2>
+                        <h5>Veja a origem de um dos nossos esportes</h5>
                     </div>
                 </div>
             </div>
@@ -110,35 +89,70 @@
 
             <div class="noticias_irrelevantes f1">        
                 <div class="noticia_completa">
-                    <div class="noticia_normal"><img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="" /></div>
+                    
+                    <a href="/noticias/noticia.html">
+                        <div class="noticia_normal">
+                            <img src="/src/assets/images/peteca-caida.jpg" alt="" />
+                        </div>
+                    </a>
                     <div class="texto2">
-                        <h2>blablaalaababababbablablablablablablablblablab</h2>
-                        <a href=""></a>
+                        <h2>Peteca é jogado em praias</h2>
+                    </div>
+                </div>
+                <div class="noticia_completa">
+                    <a href="/noticias/noticia.html">
+                        <div class="noticia_normal">
+                            <img src="/src/assets/images/pessoa-segurando-peteca.jpg" alt="" />
+                        </div>
+                    </a>
+                    <div class="texto2">
+                        <h2>Garotos brincam de peteca</h2>
                     </div>
                 </div>
             </div>
-            <div class="agora-outra">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro repellendus, nulla nemo libero rem temporibus alias. Voluptas vero obcaecati blanditiis numquam. Neque delectus laboriosam distinctio quidem maxime tempore esse?
-                Amet, iste officia tenetur obcaecati molestiae assumenda deleniti nam optio necessitatibus nobis saepe tempora accusamus facilis inventore at unde minima, similique laboriosam ratione facere esse soluta harum accusantium animi. Quam.
-                Eveniet commodi reprehenderit, exercitationem laboriosam aliquam accusamus architecto necessitatibus aut voluptate expedita nihil voluptatem sed. Expedita libero pariatur mollitia, repellat magnam distinctio aperiam sapiente officiis in enim nam ut accusantium?
-                Tempore quia inventore libero quisquam totam molestias, tenetur ducimus deleniti. Officia labore doloribus, voluptatum animi delectus laudantium blanditiis magnam iure! Voluptas dolor exercitationem voluptate ab a aliquid molestias commodi est?
-                Similique mollitia odio soluta. Ex a quasi alias adipisci, sequi eum pariatur beatae nobis quae inventore. Minus inventore quisquam, facilis ea vel atque amet autem nemo natus, accusamus dicta eaque.
-                Fugit fugiat in dolores nihil cum voluptatibus voluptatum consequatur consectetur fuga! Dolor mollitia, quo aspernatur non exercitationem rerum debitis omnis recusandae eligendi? Similique velit, porro natus molestias quaerat totam sed?
-                Delectus modi tenetur, ducimus aliquam iusto neque, ipsum debitis illum sit nobis, dicta nulla placeat. Ex, fugiat saepe neque necessitatibus quam, doloremque labore odit, atque laborum qui maiores laboriosam sequi.
-                Harum iusto quod quidem sequi incidunt nemo, unde eligendi dolorem architecto consequatur quo dolore maiores libero possimus aperiam, beatae sit voluptates culpa alias expedita dolores! Deserunt, quaerat. Alias, tempora totam.
-                In nam saepe necessitatibus eius, maxime aut, autem quia eum illum, voluptatibus alias. Fugiat nesciunt, facere a hic veritatis, tenetur iste repellendus itaque dignissimos atque praesentium commodi doloremque sit dolor.
-                Vero optio alias asperiores obcaecati? Natus ex unde molestiae velit doloribus omnis praesentium, non doloremque tenetur possimus sit commodi quaerat reiciendis culpa assumenda voluptas sapiente fugiat. Dignissimos ratione eum possimus.
+            <div class="noticias_irrelevantes f1">        
+
             </div>
         </div>
+        <!-- <div id="oferta-petecas">
+            <div class="marginx-center">
+                <div class="peteca">
+                    <div>
+                        <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>
+                            peteca
+                        </h4>
+                        <p>
+                            peteca
+                        </p>
+                    </div>
+                </div>
+                <div class="peteca">
+                    <div>
+                        <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>
+                            peteca
+                        </h4>
+                        <p>
+                            peteca
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </main>
     <!--END-->
 
     <!-- SIGNIN -->
     <div id="login-block__" class="hidden">
         <div class="centeredxy-flex" id="dao">
-            <form action="" method="post" class="form1">
-                <fieldset class="field-holder c4">
-                    <i class="material-icons pointer-cursor c6" onclick="hideUnhideLogin()">arrow_back</i>
+            <form action="" method="post" class="form1 f1">
+                <fieldset class="field-holder">
+                    <i class="material-icons pointer-cursor" onclick="hideUnhideLogin()">arrow_back</i>
                     <h2 class="text-center">
                         Login
                     </h2>
@@ -157,7 +171,7 @@
                     <div class="cas">
                         <button type="submit" class="button1 width100 bgc5">entrar</button>
                     </div>
-                    <a href="./signup.html" class="c6">cadastro</a>
+                    <a href="/signup.html">se não possui conta, faça o cadastro</a>
                 </fieldset>
             </form>
         </div>
@@ -165,31 +179,18 @@
     <!--END-->
 
     <!-- FOOTER -->
-    <footer id="footer-section__" class="full-row bgc4 c8 sticky">
+    <footer id="footer-section__">
         <div id="rte" class="marginx-center">
-            veritas
+            <p>&copy 2025 Peteca Champions. Todos os direitos reservados.</p>
+            <p>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#"> X</a>
+            </p>
+            <p>Entre em contato: <a href="eesporte:maneco@petecachampions.com">eesporte:maneco@petecachampions.com</a></p>
         </div>
     </footer>
     <!--END-->
 
 </body>
 </html>
-
-<!--
-    bg-
-    color-
-    vhidden
-    hidden
-    fixed
-    sticky
-    full-row
-    centeredxy
-    inline
-    width50
-    width100
-    height50
-    height100
-    white-space-nowrap
-    marginx-center
-    boxy
-    -->

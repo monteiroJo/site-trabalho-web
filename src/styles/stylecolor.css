@@ -1,21 +1,31 @@
 /*cores*/
 
 :root {
-    --palette-1: #F22248;
-    --palette-2: #303740;
-    --palette-3: #1e1e1f;
-    --palette-4: #1f1e22;
-    --palette-5: #2F94D3;
-    --palette-6: #007BFF;
-    --palette-7: #AEB5BF;
-    --palette-8: #F4F4F4;
-    --palette-9: #32CD32;
-    --palette-10:#e07000;
-    --palette-11: #ab0064;
+    --c-p1: #F22248;
+    --c-p2: #303740;
+    --c-p3: #1e1e1f;
+    --c-p4: #1f1e22;
+    --c-p5: #2F94D3;
+    --c-p6: #007BFF;
+    --c-p7: #AEB5BF;
+    --c-p8: #F4F4F4;
+    --c-p9: #32CD32;
+    --c-p10:#e07000;
+    --c-p11: #ab0064;
+    --c-p12: #F2EC91;
+    --c-p13: #8C6A04;
+    --c-p14: #8C0303;
+    --c-p15: #590202;
+    --c-p16: #3B97D9;
+    --c-p17: #D9D83B;
+    --c-p18: #D93D3B;
+    --c-p19: #DE4E2A;
+    --c-p20: #4551D2;
+    --c-p21: #66A31C;
 }
 
 .bgc1 {
-    background-color: var(--palette-1);
+    background-color: var(--c-p3);
 }
 .bgc2 {
     background-color: var(--palette-2);

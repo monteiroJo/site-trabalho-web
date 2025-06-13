@@ -4,6 +4,9 @@ html {
 :root {
     --nav-bar-height: 4rem;
 }
+.cac {
+    width: 19rem;
+}
 .vhidden {
     visibility: hidden;
 }
@@ -27,10 +30,6 @@ html {
 }
 .text-center {
     text-align: center;
-}
-.full-row {
-    height: fit-content;   
-    width: 100%;
 }
 .centeredxy {
     position: fixed;
@@ -66,7 +65,7 @@ html {
     white-space: nowrap;
 }
 .marginx-center {
-    max-width: 85rem;
+    max-width: min(85rem, 85vw);
     margin-left: auto;
     margin-right: auto;
 }
@@ -125,10 +124,9 @@ login-block__  header-section__   main-section__   footer-section__
 div#login-block__ > div#dao > form.form1 > fieldset.field-holder {
     padding: 3em calc(1em + 2vw);
     max-width: 100vw;
-    box-sizing: border-box;
     flex: 1;
     border: none;
-    background-color: aliceblue;
+    background-color: var(--c-p8);
     border-radius: 16px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
@@ -140,15 +138,14 @@ div#login-block__ > div#dao > form.form1 > fieldset.field-holder .button1 {
     transition: linear 0.2s;
 }
 div#login-block__ > div#dao > form.form1 > fieldset.field-holder .button1:hover {
-    background-color: var(--palette-6);
-    color: aliceblue;
+    background-color: var(--c-p5);
+    color: var(--c-p8);
 }
 div#login-block__ > div#dao > form.form1 > fieldset.field-holder .button1:active {
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    color: aliceblue;
+    color: var(--c-p8);
     background-color: blue;
 }
-
 div#login-block__ > div#dao > form.form1 > fieldset.field-holder .input1 {
     border-style: solid;
     border-radius: 6px;
@@ -162,7 +159,7 @@ div#login-block__ > div#dao > form.form1 > fieldset.field-holder .input1 {
     transition: 0.1s linear;
 }
 div#login-block__ > div#dao > form.form1 > fieldset.field-holder .input1:hover {
-    border-color: var(--palette-6);
+    border-color: var(--c-p6);
 }
 
 div#login-block__ > div#dao > form.form1 > fieldset.field-holder .label1 {
@@ -179,9 +176,19 @@ div#login-block__ > div#dao > form.form1 > fieldset.field-holder button {
 div#login-block__ > div#dao > form.form1 a {
     text-decoration: underline;
 }
+@media screen and (width < 700px){
+    .button1 {
+        background-color: var(--c-p20);
+        color: var(--c-p8);
+    }
+}
 /* ############################################################### header*/
-
-#header-section__ {
+/*
+header-section__ 
+marginx-center
+flexy with strech
+*/
+/* #header-section__ {
     position: sticky;
     top: 0px;
     z-index: 2;
@@ -225,24 +232,110 @@ div#header-section__ > nav > ul li {
 }
 #vertical-navbar {
     transition: all 1s;
+} */
+#header-section__ {
+   width: 100%;
+   background-color: var(--c-p18);
+   color: var(--c-p8);
+   padding: 0 0.1em;
+   font-family: 'Just Sans';
+}
+#header-section__ a {
+    padding: 0.7em;
+    transition: background-color linear 0.3s;
+}
+#header-section__ a:hover {
+    background-color: var(--c-p10);
+}
+#header-section__content .gridone {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#header-section__content {
+   max-width: min(85vw, 85rem);
+}
+#grid-header > .gridfour {
+   display: none;
+}
+#grid-header > .gridtwo {
+   display: flex;
+   justify-content: center;
+   gap: 9px;
+   align-items: center;
+}
+#grid-header button {
+    padding: 0.7em;
+}
+#grid-header button:hover {
+    background-color: var(--c-p10);
+    transition: background-color linear 0.3s;
+}
+#grid-header > .gridthree {
+   display: flex;
+   align-items: center;
+   justify-self: end;
+   grid-column-start: 3;
+}
+#grid-header > .gridthree i {
+   display: none;
+}
+#grid-header {
+   display: grid;
+   gap: 8px; 
+   grid-template-columns: 1fr 3fr 1fr;
+   grid-template-rows: 1fr;
+}
+@media only screen and (width <= 600px) {
+   #grid-header {
+      grid-template-rows: 1fr;
+   }
+   #grid-header.yes > .gridfour {
+      display: block;
+      grid-column: span 3;
+   }
+   #grid-header.yes > .gridfour > ul > li, #grid-header > .gridthree i {
+      display: block;
+   }
+   #grid-header > .gridtwo {
+      display: none;
+   }
+   #header-log-in {
+      display: none;
+   }
+   .gridfour a {
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+   }
+   #grid-header .gridfour a:hover,
+   #grid-header i:hover,
+   #grid-header button:hover {
+    background-color: var(--c-p19);
+    border: 2px solid var(--c-p8);
+    border-radius: 9px;
+   }
 }
 /*######################################################## main*/
 #main-section__ {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     position: relative;
-    background-color: var(--palette-8);
+    background-color: var(--c-p8);
     padding-top: 1em;
     padding-bottom: 1em;
 }
 .group-grid-three {
     /* max-width: 60vw; */
-    width: clamp(10em, 60vw, 70em);
+    width: clamp(10em, 65vw, 85em);
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "c b"
                          "a b";
+    padding: 0.3em;
     position: relative;
-    gap: 4px;
+    gap: 8px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -251,23 +344,55 @@ div#header-section__ > nav > ul li {
     .group-grid-three {
         display: block;
     }
-}
-.group-grid-three h2 {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
+    .grid-area-a, .grid-area-c {
+        display: none;
+    }
 }
 .group-grid-three > div {
     position: relative;
+    border-radius: 1em;
+    transition: all 0.3s ease-out;
+}
+.group-grid-three > div:hover {
+    transform: scale(1.03);
+    filter: brightness(120%);
+}
+.group-grid-three a {
+    font-size: 0px;
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 .group-grid-three > div > div {
+    color: var(--c-p8);
+    font-family: 'Uni Sans';
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0px;
+    left: 0pc;
+}
+.group-grid-three > div > div > h2 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    position: inherit;
+    top: 0px;
+    padding-top: 1em;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.group-grid-three > div > div > h5 {
+    position: absolute;
+    text-align: center;
+    font-family: 'mittelss';
+    top: 6rem;
+    width: 100%;
+    padding-top: 0.5em;
 }
 .group-grid-three img {
     aspect-ratio: 5 / 3;
@@ -275,11 +400,40 @@ div#header-section__ > nav > ul li {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.93;
+    filter: brightness(0.84);
 }
 .agora-outra {
     max-width: 100em;
     margin-left: auto;
     margin-right: auto;
+}
+#oferta-petecas {
+    background-color: var(--c-p2);
+    font-family: 'Mittelss';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 14rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1em 0pc;
+}
+.peteca {
+    max-height: inherit;
+    white-space: nowrap;
+    display: inline-block;
+}
+.peteca > div {
+    max-height: inherit;
+    display: inline-block;
+    width: 50%;
+}
+.peteca > div > img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /*######################################################## footer*/
 footer#footer-section__ {
@@ -287,10 +441,32 @@ footer#footer-section__ {
     top: 100vh;
 
     font-family: 'Just Sans';
-
+    font-size: small !important;
     text-align: center;
     z-index: 100;
     max-height: fit-content;
     margin-top: auto;
     padding: 1em;
+    background-color: var(--c-p20);
+    color: var(--c-p8);
+}
+
+/*#####################################################*/
+i.back {
+    width: fit-content;
+    cursor: pointer;
+    font-size: 24px;
+    top: 24px;
+    left: 24px;
+}
+i.back::before {
+    position: relative;
+    content: "arrow_back";
+    font-family: inherit;
+}
+i.back.fixed {
+    position: fixed;
+}
+i.back.absolute {
+    position: absolute;
 }
