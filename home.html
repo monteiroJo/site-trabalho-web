@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/src/styles/rstyle.css">
     <link rel="stylesheet" href="/src/styles/rstyle2.css">
 
-    <script src="./src/scripts/script1.js"></script>
 </head>
 <body>
     <!--HEADER-->
@@ -25,7 +24,7 @@
                 </div>
                 <div class="gridtwo">
                     <a href="/signup.html">cadastre-se</a>
-                    <a href="/usuario.html" class="user-link">eu</a>
+                    <a href="/usuario.html" id="user-link">eu</a>
                     <a href="/sobre.html">sobre</a>
                 </div>
                 <div class="gridthree">
@@ -61,7 +60,7 @@
                     <img src="/src/assets/images/peteca-mas-eu-nao-sei-o-que-diz-a-legenda.jpg" alt="Imagem 1" width="100%"/>
                 </div>
                 <div class="grid-area-b">
-                    <a href="./noticias/historia-da-peteca.html">aa</a>
+                    <a href="./historia-da-peteca.html">aa</a>
                     <img src="./src/assets/images/badminton-badminton.webp" alt="Imagem 1" width="100%"/>
                     <div>
                         <h2>conheça a história por trás da peteca</h2>
@@ -90,7 +89,7 @@
             <div class="noticias_irrelevantes f1">        
                 <div class="noticia_completa">
                     
-                    <a href="/noticias/noticia.html">
+                    <a href="/noticia.html">
                         <div class="noticia_normal">
                             <img src="/src/assets/images/badminton-e-como-peteca.avif" alt="" />
                         </div>
@@ -100,7 +99,7 @@
                     </div>
                 </div>
                 <div class="noticia_completa">
-                    <a href="/noticias/noticia.html">
+                    <a href="/noticia.html">
                         <div class="noticia_normal">
                             <img src="/src/assets/images/pessoa-segurando-peteca.jpg" alt="" />
                         </div>
@@ -150,7 +149,7 @@
     <!-- SIGNIN -->
     <div id="login-block__" class="hidden">
         <div class="centeredxy-flex" id="dao">
-            <form action="" method="post" class="form1 f1">
+            <form action="" method="post" class="form1 f1" id="log-in-form">
                 <fieldset class="field-holder">
                     <i class="material-icons pointer-cursor" onclick="hideUnhideLogin()">arrow_back</i>
                     <h2 class="text-center">
@@ -160,16 +159,16 @@
                         <label for="" class="label1">
                             Insira seu E-mail
                         </label>
-                        <input type="email" name="" class="width100 input1 block" placeholder="email">
+                        <input type="email" name="" class="width100 input1 block" placeholder="email" id="email">
                     </div>
                     <div class="cas">
                         <label for="" class="label1">
                             insira sua senha
                         </label>
-                        <input type="password" name="" class="width100 input1 block" placeholder="senha" required>
+                        <input type="password" name="" class="width100 input1 block" placeholder="senha" required id="password">
                     </div>
                     <div class="cas">
-                        <button type="submit" class="button1 width100 bgc5">entrar</button>
+                        <button type="submit" class="button1 width100 bgc5" onclick="logInSubmit()">entrar</button>
                     </div>
                     <a href="/signup.html">se não possui conta, faça o cadastro</a>
                 </fieldset>
@@ -191,6 +190,7 @@
         </div>
     </footer>
     <!--END-->
-
+    
+    <script src="./src/scripts/script1.js"></script>
 </body>
 </html>

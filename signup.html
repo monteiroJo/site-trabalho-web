@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>### cadastro</title>
     <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/fontmaterialdesign.css">
     <link rel="stylesheet" href="/src/styles/stylefont.css">
     <link rel="stylesheet" href="/src/styles/stylecolor.css">
     <link rel="stylesheet" href="/src/styles/tstyle.css">
@@ -16,7 +15,7 @@
 <body>
     <div id="login-block__">
         <div class="centeredxy-flex" id="dao">
-            <form action="" method="post" class="form1 f1 cac">
+            <form action="" method="post" class="form1 f1 cac" id="register-form">
                 <fieldset class="field-holder">
                     <a href="/home.html"><i class="material-icons pointer-cursor">arrow_back</i></a>
                     <h2 class="text-center">
@@ -24,28 +23,35 @@
                     </h2>
                     <div class="cas">
                         <label for="" class="label1">
+                            Insira seu Nome de Usuário
+                        </label>
+                        <input type="text" class="width100 input1 block" required placeholder="nome" id="nome">
+                    </div>
+                    <div class="cas">
+                        <label for="" class="label1">
                             Insira seu E-mail
                         </label>
-                        <input type="email" name="" class="width100 input1 block" placeholder="email">
+                        <input type="email" id="email" class="width100 input1 block" placeholder="email">
                     </div>
                     <div class="cas">
                         <label for="" class="label1">
                             insira sua senha
                         </label>
-                        <input type="password" name="" class="width100 input1 block" placeholder="senha" required>
+                        <input type="password" id="password" class="width100 input1 block" placeholder="senha" required>
                     </div>
                     <div class="cas">
                         <label for="" class="label1">
                             insira sua senha novamente
                         </label>
-                        <input type="password" name="" class="width100 input1 block" placeholder="senha" required>
+                        <input type="password" id="password-confirm" class="width100 input1 block" placeholder="senha" required>
                     </div>
                     <div class="cas">
-                        <button type="submit" class="button1 width100 bgc5">entrar</button>
+                        <button type="submit" class="button1 width100 bgc5" onclick="submitSignUp()">entrar</button>
                     </div>
                 </fieldset>
             </form>
         </div>
     </div>
+    <script src="/src/scripts/script1.js"></script>
 </body>
 </html>
