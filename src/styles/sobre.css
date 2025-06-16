@@ -1,14 +1,4 @@
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Just Sans';
-        }
-        
-        body {
-            font-family: 'Just-sans';
-        }
-        
+
         .sobre {
             display: flex;
             flex-wrap: wrap;

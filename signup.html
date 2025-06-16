@@ -4,43 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>### cadastro</title>
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/stylefont.css">
-    <link rel="stylesheet" href="/src/styles/stylecolor.css">
-    <link rel="stylesheet" href="/src/styles/tstyle.css">
-    <link rel="stylesheet" href="/src/styles/rstyle.css">
-    <link rel="stylesheet" href="/src/styles/tstyle2.css">
-    <link rel="stylesheet" href="/src/styles/rstyle2.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/stylefont.css">
+    <link rel="stylesheet" href="./src/styles/stylecolor.css">
+    <link rel="stylesheet" href="./src/styles/tstyle.css">
+    <link rel="stylesheet" href="./src/styles/rstyle.css">
+    <link rel="stylesheet" href="./src/styles/rstyle2.css">
 </head>
-<body>
-    <div id="login-block__">
+<body style="background-image: linear-gradient(#da302d, #4551D2)">
+    <div id="login-block__" style="font-family: 'Mittels';">
         <div class="centeredxy-flex" id="dao">
-            <form action="" method="post" class="form1 f1 cac" id="register-form">
+            <form action="" method="post" class="form1 cac" id="register-form">
                 <fieldset class="field-holder">
-                    <a href="/home.html"><i class="material-icons pointer-cursor">arrow_back</i></a>
+                    <a onclick="history.back()"><i class="material-icons pointer-cursor">arrow_back</i></a>
                     <h2 class="text-center">
                         Cadastro
                     </h2>
                     <div class="cas">
-                        <label for="" class="label1">
+                        <label for="nome" class="label1">
                             Insira seu Nome de Usuário
                         </label>
                         <input type="text" class="width100 input1 block" required placeholder="nome" id="nome">
                     </div>
                     <div class="cas">
-                        <label for="" class="label1">
+                        <label for="email" class="label1">
                             Insira seu E-mail
                         </label>
                         <input type="email" id="email" class="width100 input1 block" placeholder="email">
                     </div>
                     <div class="cas">
-                        <label for="" class="label1">
+                        <label for="password" class="label1">
                             insira sua senha
                         </label>
                         <input type="password" id="password" class="width100 input1 block" placeholder="senha" required>
                     </div>
                     <div class="cas">
-                        <label for="" class="label1">
+                        <label for="password-confirm" class="label1">
                             insira sua senha novamente
                         </label>
                         <input type="password" id="password-confirm" class="width100 input1 block" placeholder="senha" required>
@@ -52,6 +51,6 @@
             </form>
         </div>
     </div>
-    <script src="/src/scripts/script1.js"></script>
+    <script src="./src/scripts/script1.js"></script>
 </body>
 </html>

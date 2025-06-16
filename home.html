@@ -5,48 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/stylefont.css">
-    <link rel="stylesheet" href="/src/styles/stylecolor.css">
-    <link rel="stylesheet" href="/src/styles/tstyle.css">
-    <link rel="stylesheet" href="/src/styles/tstyle2.css">
-    <link rel="stylesheet" href="/src/styles/rstyle.css">
-    <link rel="stylesheet" href="/src/styles/rstyle2.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/stylefont.css">
+    <link rel="stylesheet" href="./src/styles/stylecolor.css">
+    <link rel="stylesheet" href="./src/styles/tstyle.css">
+    <link rel="stylesheet" href="./src/styles/rstyle.css">
+    <link rel="stylesheet" href="./src/styles/rstyle2.css">
 
 </head>
 <body>
     <!--HEADER-->
-    <header id="header-section__">
-        <div id="header-section__content" class="marginx-center">
-            <div id="grid-header">
-                <div class="gridone">
-                    <h4>peteca <br> CHAMPIONS</h4>
-                </div>
-                <div class="gridtwo">
-                    <a href="/signup.html">cadastre-se</a>
-                    <a href="/usuario.html" id="user-link">eu</a>
-                    <a href="/sobre.html">sobre</a>
-                </div>
-                <div class="gridthree">
-                    <button type="submit" class="pointer-cursor" onclick="hideUnhideLogin()" id="header-log-in">log in</button>
-                    <i class="material-icons pointer-cursor" onclick="hhh()">menu</i>
-                </div>
-                <div class="gridfour">
-                    <ul>
-                        <li>
-                            <a href="/signup.html">cadastre-se</a>
-                        </li>
-                        <li>
-                            <a href="/usuario.html" class="user-link">eu</a>
-                        </li>
-                        <li>
-                            <a href="/sobre.html">sobre</a>
-                        </li>
-                    </ul>
-                </div>
+   <header id="hs__">
+      <div id="hs__c">
+         <div id="griddy">
+            <div class="gridone">
+               <a href="./home.html">
+                  <div class="fitting">
+                     <h3>peteca <br> CHAMPIONS</h3>
+                  </div>
+
+               </a>
             </div>
-        </div>
-    </header>
+            <div class="gridtwo" id="dropdownthingy">
+               <a href="../site-trabalho-web/sobre.html">
+                  <div class="fitting glows-orange">
+                     <p>sobre</p>
+                  </div>
+               </a>
+               <!-- <a href="">
+                  <div class="fitting glows-orange">
+                     as
+                  </div>
+               </a> -->
+            </div>
+            <div class="gridthree">
+               <a href="./usuario.html">
+                  <div class="fitting glows-orange" id="user-link">
+                     eu
+                  </div>
+               </a>
+               <button type="submit" class="fitting glows-orange" id="log-in" onclick="hideUnhideLogin()">log in</button>
+               <div id="iconmenu">
+                  <button type="submit" class="fitting glows-orange" onclick="c()">
+                     <i class="material-icons">menu</i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
     <!--END-->
 
     <!--MAIN-->
@@ -54,13 +61,13 @@
         <div class="marginx-center">
             <div class="group-grid-three">
                 <div class="grid-area-a">
-                    <img src="/src/assets/images/51GVsUWZa8L.jpg" alt="Imagem 1" width="100%"/>
+                    <img src="./src/assets/images/51GVsUWZa8L.jpg" alt="Imagem 1" width="100%"/>
                 </div>
                 <div class="grid-area-c">
-                    <img src="/src/assets/images/peteca-mas-eu-nao-sei-o-que-diz-a-legenda.jpg" alt="Imagem 1" width="100%"/>
+                    <img src="./src/assets/images/peteca-mas-eu-nao-sei-o-que-diz-a-legenda.jpg" alt="Imagem 1" width="100%"/>
                 </div>
                 <div class="grid-area-b">
-                    <a href="./historia-da-peteca.html">aa</a>
+                    <a href="./src/noticias/historia-da-peteca.html">aa</a>
                     <img src="./src/assets/images/badminton-badminton.webp" alt="Imagem 1" width="100%"/>
                     <div>
                         <h2>conheça a história por trás da peteca</h2>
@@ -89,9 +96,9 @@
             <div class="noticias_irrelevantes f1">        
                 <div class="noticia_completa">
                     
-                    <a href="/noticia.html">
+                    <a href="./src/noticias/noticia.html">
                         <div class="noticia_normal">
-                            <img src="/src/assets/images/badminton-e-como-peteca.avif" alt="" />
+                            <img src="./src/assets/images/badminton-e-como-peteca.avif" alt="" />
                         </div>
                     </a>
                     <div class="texto2">
@@ -99,9 +106,9 @@
                     </div>
                 </div>
                 <div class="noticia_completa">
-                    <a href="/noticia.html">
+                    <a href="./noticia.html">
                         <div class="noticia_normal">
-                            <img src="/src/assets/images/pessoa-segurando-peteca.jpg" alt="" />
+                            <img src="./src/assets/images/pessoa-segurando-peteca.jpg" alt="" />
                         </div>
                     </a>
                     <div class="texto2">
@@ -170,7 +177,7 @@
                     <div class="cas">
                         <button type="submit" class="button1 width100 bgc5" onclick="logInSubmit()">entrar</button>
                     </div>
-                    <a href="/signup.html">se não possui conta, faça o cadastro</a>
+                    <a href="./signup.html">se não possui conta, faça o cadastro</a>
                 </fieldset>
             </form>
         </div>

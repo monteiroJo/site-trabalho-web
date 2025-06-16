@@ -4,50 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/src/styles/reset.css">
-  <link rel="stylesheet" href="/src/styles/stylecolor.css">
-  <link rel="stylesheet" href="/src/styles/stylefont.css">
-  <link rel="stylesheet" href="/src/styles/noticia.css">
-  <link rel="stylesheet" href="/src/styles/tstyle.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/stylecolor.css">
+  <link rel="stylesheet" href="../styles/stylefont.css">
+  <link rel="stylesheet" href="../styles/noticia.css">
+  <link rel="stylesheet" href="../styles/tstyle.css">
 </head>
 
 <body>
-  <header id="header-section__">
-    <div id="header-section__content" class="marginx-center">
-        <div id="grid-header">
+   <header id="hs__">
+      <div id="hs__c">
+         <div id="griddy">
             <div class="gridone">
-                <h4>peteca <br> CHAMPIONS</h4>
+               <a href="../../home.html">
+                  <div class="fitting">
+                     <h3>peteca <br> CHAMPIONS</h3>
+                  </div>
+
+               </a>
             </div>
-            <div class="gridtwo">
-                <a href="/signup.html">cadastre-se</a>
-                <a href="/usuario.html" id="user-link">eu</a>
-                <a href="/sobre.html">sobre</a>
+            <div class="gridtwo" id="dropdownthingy">
+               <a href="../../sobre.html">
+                  <div class="fitting glows-orange">
+                     <p>sobre</p>
+                  </div>
+               </a>
+               <!-- <a href="">
+                  <div class="fitting glows-orange">
+                     as
+                  </div>
+               </a> -->
             </div>
             <div class="gridthree">
-                <button type="submit" class="pointer-cursor" onclick="hideUnhideLoginB()" id="header-log-in">log in</button>
-                <i class="material-icons pointer-cursor" onclick="hhh()">menu</i>
+               <a href="../../usuario.html">
+                  <div class="fitting glows-orange" id="user-link">
+                     eu
+                  </div>
+               </a>
+               <button type="submit" class="fitting glows-orange" id="log-in" onclick="hideUnhideLogin()">log in</button>
+               <div id="iconmenu">
+                  <button type="submit" class="fitting glows-orange" onclick="c()">
+                     <i class="material-icons">menu</i>
+                  </button>
+               </div>
             </div>
-            <div class="gridfour">
-                <ul>
-                    <li>
-                        <a href="/signup.html">cadastre-se</a>
-                    </li>
-                    <li>
-                        <a href="/user.html" class="user-link">eu</a>
-                    </li>
-                    <li>
-                        <a href="/sobre.html">sobre</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-  </header>
+         </div>
+      </div>
+   </header>
   <div class="bbody" id="noticia-main">
     <h1>Badminton e Peteca: Conexões Entre Tradição e Competitividade
 </h1>
     <img
-      src="/src/assets/images/pessoas-jogando-peteca.jpg"
+      src="../assets/images/pessoas-jogando-peteca.jpg"
       alt=""
       class="imagem"
     />
@@ -87,7 +95,7 @@
                   <div class="cas">
                       <button type="submit" class="button1 width100 bgc5">entrar</button>
                   </div>
-                  <a href="/signup.html">se não possui conta, faça o cadastro</a>
+                  <a href="../../signup.html">se não possui conta, faça o cadastro</a>
               </fieldset>
           </form>
       </div>
@@ -104,7 +112,7 @@
         </div>
     </footer>
 
-    <script src="/src/scripts/script1.js"></script>
+    <script src="../../src/scripts/script1.js"></script>
 
 </body>
 </html>

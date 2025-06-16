@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usuário</title>
-    <link rel="stylesheet" href="/src/styles/stylefont.css">
-    <link rel="stylesheet" href="/src/styles/user.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/stylefont.css">
+    <link rel="stylesheet" href="./src/styles/user.css">
+    <link rel="stylesheet" href="./src/styles/stylecolor.css">
+    <link rel="stylesheet" href="./src/styles/tstyle.css">
     <style>
     </style>
 </head>
 
 <body>
-    <a href="home.html"><i class="material-icons back fixed">arrow_back</i></a>
-    <div class="usuario">
+    <!-- <a href="home.html"><i class="material-icons back fixed">arrow_back</i></a> -->
+
+
+   <header id="hs__">
+      <div id="hs__c">
+         <div id="griddy">
+            <div class="gridone">
+               <a href="./home.html">
+                  <div class="fitting">
+                     <h3>peteca <br> CHAMPIONS</h3>
+                  </div>
+
+               </a>
+            </div>
+            <div class="gridtwo" id="dropdownthingy">
+               <a href="../site-trabalho-web/sobre.html">
+                  <div class="fitting glows-orange">
+                     <p>sobre</p>
+                  </div>
+               </a>
+               <!-- <a href="">
+                  <div class="fitting glows-orange">
+                     as
+                  </div>
+               </a> -->
+            </div>
+            <div class="gridthree">
+               <a href="./usuario.html">
+                  <div class="fitting glows-orange" id="user-link">
+                     eu
+                  </div>
+               </a>
+               <button type="submit" class="fitting glows-orange" id="log-in" onclick="hideUnhideLogin()">log in</button>
+               <div id="iconmenu">
+                  <button type="submit" class="fitting glows-orange" onclick="c()">
+                     <i class="material-icons">menu</i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+    <div class="usuario" id="thereisnomainhaha">
         <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="Usuário" class="usuario-img" />
         <p>Nome de Usuário</p>
 
@@ -22,7 +67,36 @@
         <div class="senha">Senha: ***************</div>
     </div>
 
-    <script src="/src/scripts/script1.js"></script>
+    <div id="login-block__" class="hidden">
+        <div class="centeredxy-flex" id="dao">
+            <form action="" method="post" class="form1 f1" id="log-in-form">
+                <fieldset class="field-holder">
+                    <i class="material-icons pointer-cursor" onclick="hideUnhideLogin()">arrow_back</i>
+                    <h2 class="text-center">
+                        Login
+                    </h2>
+                    <div class="cas">
+                        <label for="" class="label1">
+                            Insira seu E-mail
+                        </label>
+                        <input type="email" name="" class="width100 input1 block" placeholder="email" id="email">
+                    </div>
+                    <div class="cas">
+                        <label for="" class="label1">
+                            insira sua senha
+                        </label>
+                        <input type="password" name="" class="width100 input1 block" placeholder="senha" required id="password">
+                    </div>
+                    <div class="cas">
+                        <button type="submit" class="button1 width100 bgc5" onclick="logInSubmit()">entrar</button>
+                    </div>
+                    <a href="./signup.html">se não possui conta, faça o cadastro</a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="./src/scripts/script1.js"></script>
 
 </body>
 

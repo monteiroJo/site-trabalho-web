@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./src/styles/reset.css">
+   <link rel="stylesheet" href="./src/styles/stylefont.css">
+   <link rel="stylesheet" href="./src/styles/stylecolor.css">
+   <style>
+      #griddy .glows-orange {
+         transition: background-color 0.3s ease-in;
+         cursor: pointer;
+      }
+      #griddy .glows-orange:hover {
+         background-color: var(--c-p19);
+         border: 2px solid white;
+      }
+      #hs__ {
+         background-color: var(--c-p18b);
+         color: #fff;
+         width: 100%;
+         font-family: 'Just Sans';
+      }
+      #hs__c {
+         max-width: min(85vw, 85rem);
+         margin-left: auto; margin-right: auto;
+      }
+      #griddy {
+         display: grid;
+         grid-template-columns: 1fr 3fr 1fr;
+         grid-template-rows: 1fr;
+         grid-template-areas: "one two three";
+      }
+      #griddy > .gridone {
+         grid-area: one;
+         justify-self: start;
+      }
+      #griddy > .gridtwo {
+         grid-area: two;
+         justify-self: center;
+      }
+      #griddy > .gridtwo a {
+         display: inline-block;
+         height: 100%;
+      }
+      #griddy .fitting {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding-left: 0.7rem;
+         padding-right: 0.7rem;
+         height: 100%;
+         border-radius: 9px;
+      }
+      #griddy > .gridthree {
+         display: flex;
+         grid-area: three;
+         justify-self: end;
+      }
+      #griddy > .gridthree a {
+         height: 100%;
+      }
+      #griddy > .gridthree > div {
+         height: 100%;
+      }
+      #iconmenu {
+         display: none;
+      }
+      #griddy > .gridthree > div > i {display: block;margin-top: auto; margin-bottom: auto;}
+      @media only screen and (width <= 700px) {
+         #iconmenu {
+            display: block;
+         }
+         #griddy {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 'one three' 'two two';
+         }
+         #griddy > .gridone {
+            justify-self: start;
+         }
+         #griddy > .gridtwo {
+            justify-self: start;
+            width: 100%;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 0.3s ease-in;
+         }
+         #griddy > .gridtwo .fitting {
+            justify-content: start;
+         }
+         #griddy > .gridtwo.yes {
+            max-height: 100%;
+         }
+         #griddy > .gridtwo a {
+            width: 100%;
+            height: fit-content;
+         }
+         #griddy > .gridthree {
+            justify-self: end;
+         }
+      }
+
+   </style>
+</head>
+<body>
+   <header id="hs__">
+      <div id="hs__c">
+         <div id="griddy">
+            <div class="gridone">
+               <a href="./home.html">
+                  <div class="fitting">
+                     <h3>peteca <br> CHAMPIONS</h3>
+                  </div>
+
+               </a>
+            </div>
+            <div class="gridtwo" id="dropdownthingy">
+               <a href="../site-trabalho-web/sobre.html">
+                  <div class="fitting glows-orange">
+                     <p>sobre</p>
+                  </div>
+               </a>
+               <!-- <a href="">
+                  <div class="fitting glows-orange">
+                     as
+                  </div>
+               </a> -->
+            </div>
+            <div class="gridthree">
+               <a href="">
+                  <div class="fitting glows-orange" id="user-link">
+                     eu
+                  </div>
+               </a>
+               <button type="submit" class="fitting glows-orange" id="log-in">log in</button>
+               <div id="iconmenu">
+                  <button type="submit" class="fitting glows-orange" onclick="c()">
+                     <i class="material-icons">menu</i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+
+   <script>
+      let navbarhahah = localStorage.getItem("user");
+      if (!navbarhahah) {
+         document.getElementById('user-link').style.display='none';
+         document.getElementById('log-in').style.display='block';
+      } else if (!navbarhahah) {
+         document.getElementById('user-link').style.display='block';
+         document.getElementById('log-in').style.display='none';
+      }
+      
+      let dropdownthingylazycounter = 0;
+      let zzz = () => ((++dropdownthingylazycounter)%2 == 0 ? document.getElementById('dropdownthingy').classList.add('yes'): document.getElementById('dropdownthingy').classList.remove('yes'));
+      function c() {
+         zzz.apply();
+      }
+   </script>
+</body>
+</html>

@@ -233,88 +233,99 @@ div#header-section__ > nav > ul li {
 #vertical-navbar {
     transition: all 1s;
 } */
-#header-section__ {
-   width: 100%;
-   background-color: var(--c-p18);
-   color: var(--c-p8);
-   padding: 0 0.1em;
-   font-family: 'Just Sans';
-}
-#header-section__ a {
-    padding: 0.7em;
-    transition: background-color linear 0.3s;
-}
-#header-section__ a:hover {
-    background-color: var(--c-p10);
-}
-#header-section__content .gridone {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#header-section__content {
-   max-width: min(85vw, 85rem);
-}
-#grid-header > .gridfour {
-   display: none;
-}
-#grid-header > .gridtwo {
-   display: flex;
-   justify-content: center;
-   gap: 9px;
-   align-items: center;
-}
-#grid-header button {
-    padding: 0.7em;
-}
-#grid-header button:hover {
-    background-color: var(--c-p10);
-    transition: background-color linear 0.3s;
-}
-#grid-header > .gridthree {
-   display: flex;
-   align-items: center;
-   justify-self: end;
-   grid-column-start: 3;
-}
-#grid-header > .gridthree i {
-   display: none;
-}
-#grid-header {
-   display: grid;
-   gap: 8px; 
-   grid-template-columns: 1fr 3fr 1fr;
-   grid-template-rows: 1fr;
-}
-@media only screen and (width <= 600px) {
-   #grid-header {
-      grid-template-rows: 1fr;
-   }
-   #grid-header.yes > .gridfour {
-      display: block;
-      grid-column: span 3;
-   }
-   #grid-header.yes > .gridfour > ul > li, #grid-header > .gridthree i {
-      display: block;
-   }
-   #grid-header > .gridtwo {
-      display: none;
-   }
-   #header-log-in {
-      display: none;
-   }
-   .gridfour a {
-    display: block;
-    width: 100%;
-    transition: all 0.3s;
-   }
-   #grid-header .gridfour a:hover,
-   #grid-header i:hover,
-   #grid-header button:hover {
-    background-color: var(--c-p19);
-    border: 2px solid var(--c-p8);
-    border-radius: 9px;
-   }
-}
+      #griddy .glows-orange {
+         transition: background-color 0.3s ease-in;
+         cursor: pointer;
+      }
+      #griddy .glows-orange:hover {
+         background-color: var(--c-p19);
+         border: 2px solid white;
+      }
+      #hs__ {
+         background-color: var(--c-p18b);
+         color: #fff;
+         width: 100%;
+         font-family: 'Just Sans';
+      }
+      #hs__c {
+         max-width: min(85vw, 85rem);
+         margin-left: auto; margin-right: auto;
+      }
+      #griddy {
+         display: grid;
+         grid-template-columns: 1fr 3fr 1fr;
+         grid-template-rows: 1fr;
+         grid-template-areas: "one two three";
+      }
+      #griddy > .gridone {
+         grid-area: one;
+         justify-self: start;
+      }
+      #griddy > .gridtwo {
+         grid-area: two;
+         justify-self: center;
+      }
+      #griddy > .gridtwo a {
+         display: inline-block;
+         height: 100%;
+      }
+      #griddy .fitting {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding-left: 0.7rem;
+         padding-right: 0.7rem;
+         height: 100%;
+         border-radius: 9px;
+      }
+      #griddy > .gridthree {
+         display: flex;
+         grid-area: three;
+         justify-self: end;
+      }
+      #griddy > .gridthree a {
+         height: 100%;
+      }
+      #griddy > .gridthree > div {
+         height: 100%;
+      }
+      #iconmenu {
+         display: none;
+      }
+      #griddy > .gridthree > div > i {display: block;margin-top: auto; margin-bottom: auto;}
+      @media only screen and (width <= 700px) {
+         #iconmenu {
+            display: block;
+         }
+         #griddy {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 'one three' 'two two';
+         }
+         #griddy > .gridone {
+            justify-self: start;
+         }
+         #griddy > .gridtwo {
+            justify-self: start;
+            width: 100%;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 0.3s ease-in;
+         }
+         #griddy > .gridtwo .fitting {
+            justify-content: start;
+         }
+         #griddy > .gridtwo.yes {
+            max-height: 100%;
+         }
+         #griddy > .gridtwo a {
+            width: 100%;
+            height: fit-content;
+         }
+         #griddy > .gridthree {
+            justify-self: end;
+         }
+      }
 /*######################################################## main*/
 #main-section__ {
     display: flex;
@@ -441,7 +452,6 @@ footer#footer-section__ {
     top: 100vh;
 
     font-family: 'Just Sans';
-    font-size: small !important;
     text-align: center;
     z-index: 100;
     max-height: fit-content;
@@ -450,6 +460,7 @@ footer#footer-section__ {
     background-color: var(--c-p20);
     color: var(--c-p8);
 }
+#rte > p {font-size: 12px;}
 
 /*#####################################################*/
 i.back {

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: inherit;
+    font-family: inherit, sans-serif;
     vertical-align: baseline;
 }
 body, html {
@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    display: block;
 }
 ul, ol, dl {
     list-style: none;

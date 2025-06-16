@@ -9,7 +9,6 @@ function d() {
     "block" : "none";*/
 }
 let memo = false;
-
 function hideUnhide(c) {
     k = document
     .getElementById(c)
@@ -21,21 +20,34 @@ function hideUnhide(c) {
     .style
     .display = k;
 }
+if (localStorage.getItem("user") && document.getElementById('user-account-button')) {
+    // document.getElementById('user-account-button').
+}
 function hideUnhideLogin() {
-    let k = document.getElementById("header-section__").style.filter;
+    let k = document.getElementById("hs__").style.filter;
     k = k === "blur(5px)" ? "none" : "blur(5px)";
     
     hideUnhide("login-block__");
-    document.getElementById("header-section__").style.filter = k;
+    document.body.children.array.forEach(element => {
+        
+    });
+    if (document.getElementById("hs__"))
+    document.getElementById("hs__").style.filter = k;
+    if (document.getElementById("footer-section__"))
     document.getElementById("footer-section__").style.filter = k;
+    if (document.getElementById( "main-section__" ))
     document.getElementById( "main-section__" ).style.filter = k;
+    if(document.getElementById('thereisnomainhaha'))
+    document.getElementById('thereisnomainhaha').style.filter = k;
+    if(document.getElementById('noticia-main'))
+    document.getElementById('noticia-main').style.filter = k;
 }
 function hideUnhideLoginB() {
-    let k = document.getElementById("header-section__").style.filter;
+    let k = document.getElementById("hs__").style.filter;
     k = k === "blur(5px)" ? "none" : "blur(5px)";
     
     hideUnhide("login-block__");
-    document.getElementById("header-section__").style.filter = k;
+    document.getElementById("hs__").style.filter = k;
     document.getElementById("footer-section__").style.filter = k;
     document.getElementById( "noticia-main" ).style.filter = k;
 }
@@ -105,6 +117,24 @@ if (document.getElementById("header-log-in") != null && localStorage.getItem("us
 let thispage = location.pathname.split("/").slice(-1)[0];
 if (thispage === "usuario.html") {
     let hah = JSON.parse(localStorage.getItem("user"));
+    if (!hah) {window.location.href = 'home.html'};
     document.getElementById("nome").innerHTML = hah.username;
     document.getElementById("email").innerHTML = hah.email;
+}
+
+/*navbar hahah*/
+
+let navbarhahah = localStorage.getItem("user");
+if (!navbarhahah) {
+    document.getElementById('user-link').style.display='none';
+    document.getElementById('log-in').style.display='block';
+} else if (!navbarhahah) {
+    document.getElementById('user-link').style.display='block';
+    document.getElementById('log-in').style.display='none';
+}
+      
+let dropdownthingylazycounter = 0;
+let zzz = () => ((++dropdownthingylazycounter)%2 == 0 ? document.getElementById('dropdownthingy').classList.add('yes'): document.getElementById('dropdownthingy').classList.remove('yes'));
+function c() {
+    zzz.apply();
 }
